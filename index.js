@@ -12,7 +12,7 @@ const con = mysql.createConnection({
 
 con.connect(function(err) {
   if (err) throw err;
-  console.log("Connected!");
+  console.log("Connection done!");
 });
 
 app.use("/test", (req, res) => {
